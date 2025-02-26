@@ -1,4 +1,4 @@
-name: CI Validation Password
+name: CI Vérification Phrase
 
 on:
   push:
@@ -25,4 +25,4 @@ jobs:
         run: npm install jest --save-dev
 
       - name: Run tests
-        run: npx jest password.test.js
+        run: npx jest phrase.test.js
