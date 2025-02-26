@@ -19,3 +19,7 @@ test('Manque un caractère spécial', () => {
 test('Mot de passe valide', () => {
     expect(validerMotDePasse("Abcd1234!")).toBe("✅ Mot de passe valide");
 });
+
+test('Mot de passe valide', () => {
+    expect(validerMotDePasse("Abcd1234!")).toBe("❌ Mot de passe valide");  // Cela devrait échouer avec l'ancienne fonction.
+});
